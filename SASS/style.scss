@@ -1,0 +1,24 @@
+//nesting
+
+@import "utils/variable";
+@import "utils/base";
+*{
+    box-sizing: border-box;
+}
+
+%button_common{
+    color:white;
+    font-size:20px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-warning{
+    @extend %button_common;
+    background-color: red;
+}
+.btn-success{
+    @extend %button_common;
+     background-color: green;
+}
